@@ -6,16 +6,17 @@ import json
 import os
 
 # Set up the GPIO pin for the button
-button = gpiozero.Button(17, pull_up=True)
+button = gpiozero.Button(17, pull_up=True, bounce_time=0.1)
 
 # Initialize pygame mixer for sound playback
-pygame.mixer.init()
+pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=2048)
 
 # Create a tkinter window for displaying text
 root = tk.Tk()
 root.title("Clue Box")
 
 # Make the window full screen
+root.update_idletasks()  # Force an update
 root.attributes('-fullscreen', True)
 root.configure(bg='black')
 
