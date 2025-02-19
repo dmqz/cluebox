@@ -1,19 +1,19 @@
 [
     {
-        "sound": "sample.wav",
-        "text": "Sometimes you must go where other people have gone. You have a crappy job ahead of you!"
+        "sound": "sleepy.MP3",
+        "text": "You look like you're getting sleepy"
     },
     {
-        "sound": "sample2.wav",
-        "text": "This is just a test to see if the text shows up."
+        "sound": "toilet.MP3",
+        "text": "Sometimes you need to go where other people have gone."
     },
     {
-        "sound": "sample3.wav",
-        "text": "The next clue is hidden in plain sight, look around carefully."
+        "sound": "screwed.MP3",
+        "text": "You're screwed if you can't get your heads aligned"
     },
     {
-        "sound": "sample2.wav",
-        "text": "Trying to see if anything changes."
+        "sound": "contraband.MP3",
+        "text": "Don't vent to me! Find your contraband"
     }
 
 ]

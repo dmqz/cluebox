@@ -1,0 +1,5 @@
+ALSA lib pcm.c:8570:(snd_pcm_recover) underrun occurred
+ALSA lib pcm.c:8570:(snd_pcm_recover) underrun occurred
+ALSA lib pcm.c:8570:(snd_pcm_recover) underrun occurred
+ALSA lib pcm.c:8570:(snd_pcm_recover) underrun occurred
+ALSA lib pcm.c:8570:(snd_pcm_recover) underrun occurred

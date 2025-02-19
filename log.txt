@@ -1,0 +1,45 @@
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for wm8960soundcard
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "/home/cluebox/cluebox/main.py", line 12, in <module>
+    pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=2048)
+pygame.error: ALSA: Couldn't open audio device: No such device
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for wm8960soundcard
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "/home/cluebox/cluebox/main.py", line 12, in <module>
+    pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=2048)
+pygame.error: ALSA: Couldn't open audio device: No such device
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for wm8960soundcard
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "/home/cluebox/cluebox/main.py", line 12, in <module>
+    pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=2048)
+pygame.error: ALSA: Couldn't open audio device: No such device
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Button Pressed!
+Button Pressed!
+Button Pressed!
+Button Pressed!
+Button Pressed!
+No more clues available.
+Button Pressed!
+No more clues available.
+Resetting the app...
+Exiting Clue Box...
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Exiting Clue Box...
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Exiting Clue Box...
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Exiting Clue Box...
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Exiting Clue Box...
