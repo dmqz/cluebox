@@ -4,7 +4,6 @@ import time
 import tkinter as tk
 import json
 import os
-import signal
 import sys
 
 # Set up the GPIO pin for the button
@@ -47,7 +46,7 @@ clues = load_clues()
 button_press_start_time = None
 button_hold_duration = 3  # seconds for reset
 reset_triggered = False
-press_count = 0
+press_count = 0  # Keeps track of which clue to display
 
 # Function to adjust font size dynamically
 def adjust_font_size(event=None):
@@ -86,13 +85,13 @@ def on_button_pressed():
     button_press_start_time = time.time()
     print("Button Pressed!")
     
-    if press_count < len(clues):
-        transition_to_clue(clues[press_count])
-    else:
-        print("No more clues available.")
+    if press_count >= len(clues):  # If all clues were played, show "No more clues"
         label.config(text="No more clues.")
-    
-    press_count += 1
+        press_count = 0  # Reset to the first clue on the next button press
+    else:  # Play the next clue
+        transition_to_clue(clues[press_count])
+        press_count += 1
+
     reset_triggered = False
 
 # Check if the button is held
@@ -106,7 +105,7 @@ def check_button_hold():
 
     root.after(100, check_button_hold)
 
-# **NEW**: Function to safely exit when Escape key is pressed
+# Function to safely exit when Escape key is pressed
 def exit_program(event=None):
     print("Exiting Clue Box...")
     pygame.mixer.quit()
@@ -122,7 +121,7 @@ root.after(100, check_button_hold)
 # Adjust font size on window resize
 root.bind('<Configure>', adjust_font_size)
 
-# **NEW**: Bind the Escape key to quit the application
+# Bind the Escape key to quit the application
 root.bind("<Escape>", exit_program)
 
 # Run the Tkinter event loop
