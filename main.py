@@ -20,6 +20,7 @@ root.title("Clue Box")
 root.update_idletasks()
 root.attributes('-fullscreen', True)
 root.configure(bg='black')
+root.config(cursor="none")
 
 # Set up a label to display text on the screen
 label = tk.Label(root, text="", font=("Helvetica", 48), fg="white", bg="black", justify="center", wraplength=root.winfo_screenwidth()-50)
