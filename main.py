@@ -23,7 +23,8 @@ root.configure(bg='black')
 root.config(cursor="none")
 
 # Set up a label to display text on the screen
-label = tk.Label(root, text="", font=("Helvetica", 48), fg="white", bg="black", justify="center", wraplength=root.winfo_screenwidth()-50)
+label = tk.Label(root, text="Need a clue?", font=("Helvetica", 48), fg="white", bg="black", 
+                 justify="center", wraplength=root.winfo_screenwidth()-50)
 label.pack(expand=True)
 
 # Function to load clues from a configuration file (JSON)
@@ -87,7 +88,7 @@ def on_button_pressed():
     print("Button Pressed!")
     
     if press_count >= len(clues):  # If all clues were played, show "No more clues"
-        label.config(text="No more clues.")
+        label.config(text="No more clues. Press the green button to hear them again.")
         press_count = 0  # Reset to the first clue on the next button press
     else:  # Play the next clue
         transition_to_clue(clues[press_count])
